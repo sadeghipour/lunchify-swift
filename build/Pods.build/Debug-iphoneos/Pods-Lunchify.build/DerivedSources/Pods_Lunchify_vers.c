@@ -1,0 +1,1 @@
+ const unsigned char Pods_LunchifyVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_Lunchify  PROJECT:Pods-1" "\n"; const double Pods_LunchifyVersionNumber __attribute__ ((used)) = (double)1.;

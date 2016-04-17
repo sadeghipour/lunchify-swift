@@ -1,0 +1,1 @@
+ const unsigned char JGProgressHUDVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:JGProgressHUD  PROJECT:Pods-1" "\n"; const double JGProgressHUDVersionNumber __attribute__ ((used)) = (double)1.;

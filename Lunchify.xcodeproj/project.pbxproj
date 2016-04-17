@@ -313,7 +313,7 @@
 				TargetAttributes = {
 					99827AC91C012933001D10EF = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = T73DCRT9J5;
+						DevelopmentTeam = RGRAL64W8Y;
 					};
 					99827ADD1C012933001D10EF = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -622,7 +622,7 @@
 				INFOPLIST_FILE = Lunchify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Lunchify;
+				PRODUCT_BUNDLE_IDENTIFIER = Lunchifyy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
@@ -643,7 +643,7 @@
 				INFOPLIST_FILE = Lunchify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Lunchify;
+				PRODUCT_BUNDLE_IDENTIFIER = Lunchifyy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;

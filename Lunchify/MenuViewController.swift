@@ -148,6 +148,20 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource, DZNEmp
             let meals = menu.getMealsForIndex(indexPath.section)
             let meal = meals[indexPath.row]
             let flags:[String] = meal["flags"].arrayValue.map { $0.string!.uppercaseString }
+            let mealPicURL = meal["url"] ? meal["url"].stringValue : "https://b.zmtcdn.com/data/pictures/5/5927505/de91595c2c9192868419fc6c1d5556a3_160_thumb.jpg"
+            
+            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+            dispatch_async(dispatch_get_global_queue(priority, 0)) {
+                
+                let url = NSURL(string: mealPicURL)
+                let data = NSData(contentsOfURL: url!)
+                let mealPic = UIImage(data: data!)
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    cell.mealPic.image = mealPic
+                }
+            }
+            
             
             cell.mealTitle?.text = meal["title"].stringValue
             if flags.count > 0 {

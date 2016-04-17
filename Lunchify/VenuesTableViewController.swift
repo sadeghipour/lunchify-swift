@@ -156,7 +156,7 @@ class VenuesTableViewController: UITableViewController, CLLocationManagerDelegat
                 let controller = (segue.destinationViewController as! MenuViewController)
                 controller.venue = venue
                 controller.location = self.location
-                controller.date = venuesService.getMenuDate("EEEE")
+                controller.date = venuesService.getMenuDate()
             }
         }
     }

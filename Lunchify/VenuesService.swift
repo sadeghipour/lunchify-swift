@@ -51,15 +51,16 @@ struct VenuesService {
     
     func getMenuDate(format: String = "YYYY-MM-dd") -> String {
         // Get Date
-        let today = NSDate()
-        
+        //let today = NSDate()
+        let yesterday = "2016-04-15"
         // Formatter
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = format
+        let yesterdayDate = dateFormatter.dateFromString(yesterday)
         dateFormatter.timeZone = NSTimeZone.localTimeZone()
         
         // Return
-        return dateFormatter.stringFromDate(today)
+        return dateFormatter.stringFromDate(yesterdayDate!)
     }
     
 }
